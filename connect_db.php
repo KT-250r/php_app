@@ -1,5 +1,5 @@
 <?php
-	$dsn = "sqlite:/var/www/html/php/login.db"; //データベースの場所指定
+	$dsn = "sqlite:/var/www/html/php_app/login.db"; //データベースの場所指定
 	$id = 1;
 
 	try {
