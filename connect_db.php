@@ -9,7 +9,7 @@
 		$stmt -> bindParam(":id", $id); //パラメータを固定
 		$stmt -> execute(); //SQL文実行、stmtに結果を格納
 		$rec = $stmt -> fetchAll();  //結果の処理
-	}catch(PDOException $e){ //データベースと接続失敗した場合、PDOExceptionという例外を投げる
+	} catch(PDOException $e){ //データベースと接続失敗した場合、PDOExceptionという例外を投げる
 		exit(mb_convert_encoding($e->getMessage(), "UTF-8", "SJIS-win"));
 		die(); //必要か分からん
 	}
