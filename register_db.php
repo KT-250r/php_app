@@ -2,11 +2,6 @@
     $name = (string)$_POST["name"];
     $pass = (string)$_POST["pass"];
 
-    echo $name, $pass;
-
-    // $name = "cc";
-    // $pass = "aaaa";
-
     $dsn = "sqlite:/var/www/html/php_app/login.db";
 
     try {
@@ -38,6 +33,8 @@
         <title>登録完了</title>
     </head>
     <body>
+        <h1>登録が完了しました</h1>
+        <a href="./index.html">ログインはこちら</a>
         <?php //foreach ($res as list($name_item, $pass_item)): ?>
 	    	<?php //echo $name_item . "<br>" . $pass_item; ?>
 		<?php //endforeach; ?>
